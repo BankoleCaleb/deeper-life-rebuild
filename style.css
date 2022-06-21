@@ -1,0 +1,641 @@
+:root {
+    --red-button-color: #cf2e2e;
+    --white-button-border: #abb8c3;
+    --white-button-color: #eee;
+    --red-button-border: #991313;
+    --button-border: 2px;
+    --light-blue: #0693e3;
+    --shadow: 0px 3px 3px rgba(53, 52, 52, 0.2);
+    --tomato: #cf2e2e;
+    --light-tomato: #f78da7;
+    --button-font: .6rem;
+    --button-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --button-weight: bold;
+}
+
+::selection {
+    color: #000;
+    background-color: var(--white-button-border);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+.nav {
+    background-color: rgba(255, 255, 255, .9);
+    border-top: 4px solid var(--light-blue);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 5px 20px 5px 8px;
+    z-index: 1;
+    
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    /* gap: 5px;
+    align-items: center;
+    align-content: center; */
+    box-shadow: var(--shadow);
+}
+
+.menu {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 1.2rem;
+}
+
+.links {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: var(--red-button-color);
+}
+
+.nav-link {
+    font-size: .6rem;
+    display: inline-block;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    object-fit: fill;
+}
+
+.large-img {
+    position: relative;
+    z-index: -1;
+}
+
+.center-btn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+}
+
+
+.white-btn {
+    display: inline-block;
+    color: black;
+    padding: 5px;
+    font-size: var(--button-font);
+    font-family: var(--button-font-family);
+    border-bottom: 3px solid var(--white-button-border);
+    border-radius: var(--button-border);
+    background-color: var(--white-button-color);
+    font-weight: var(--button-weight);
+    margin-inline: 3px;
+}
+
+.white-btn:hover {
+    color: var(--red-button-color);
+
+}
+
+.red-btn:hover {
+    color: var(--red-button-color);
+    border-bottom: 3px solid var(--white-button-border);
+    background-color: var(--white-button-color);
+}
+
+.red-btn {
+    display: inline-block;
+    border-bottom: 3px solid var(--red-button-border);
+    font-size: var(--button-font);
+    border-radius: var(--button-border);
+    padding: 5px;
+    color: white;
+    background-color: var(--red-button-color);
+    font-weight: var(--button-weight);
+}
+
+.right {
+    margin-right: 3px;
+}
+.left{
+    margin-left: 3px;
+}
+.bottom {
+    margin-bottom: 3px;
+}
+.top {
+    margin-top: 3px;
+}
+
+[alt="deeper life logo"] {
+    width: 250px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.search-bar {
+    display: none;
+}
+
+.search-div {
+    font-size: .8rem;
+    display: none;
+}
+
+[class*="fa"]:hover {
+    color: var(--red-button-color);
+}
+
+[type="text"] {
+    border: 2px solid black;
+    border-radius: 2px;
+    padding: 3px;
+    font-size: .8rem;
+}
+
+[type="text"]:focus {
+    border: 2px solid var(--red-button-color);
+    border-radius: 2px;
+    outline: none;
+}
+
+.contacts {
+    display: none;
+}
+
+.hr {
+    width: 40px;
+    height: 5px;
+    margin: 0;
+}
+
+.red-hr {
+    background-color: var(--red-button-color);
+}
+
+.white-hr {
+    background-color: white;
+}
+
+.m-blue {
+    background-color: var(--light-blue);
+    padding: 2rem 0;
+}
+
+.m-dark-white {
+    background-color: #eee;
+    padding: 2rem 0;
+}
+
+.m-white {
+    background-color: white;
+    padding: 2rem 0;
+    box-shadow: 0px -3px -3px rgba(53, 52, 52, 0.2);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.inner-container {
+    max-width: 700px;
+}
+
+.head {
+    max-width: 700px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.partition {
+    height: 100vh;
+    display: none;
+}
+
+.m-blue-link a {
+    margin-bottom: 5px;
+}
+
+.h2 {
+    margin-top: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dark-p {
+    color: #999;
+    font-family: serif;
+}
+
+.light-p {
+    color: white;
+}
+
+.serif {
+    font-family: serif;
+}
+
+
+/* .big-card {
+
+} */
+
+.large-pic {
+    width: 100%;
+    height: auto;
+}
+
+.below-img {
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 1.5rem;
+    margin: 0;
+}
+
+.below-img a.red-btn, .below-img a.white-btn {
+    margin-bottom: 7px;
+}
+
+.underline-link {
+    text-decoration: underline;
+    text-decoration-color: #cf2e2e;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
+    line-height: 1.2;
+    text-transform: none;
+}
+
+.no-padding-underline-link {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
+    line-height: 1.2;
+    text-transform: none;
+    color: white;
+    font-size: .8rem;
+}
+
+.underline-link:hover {
+    color: #cf2e2e;
+}
+
+.date-card {
+    padding: 5px;
+    position: absolute;
+    text-transform: uppercase;
+    display: inline;
+    font-size: .6rem;
+    font-weight: bold;
+    color: black;
+}
+
+.blue-date-card {
+    background-color: #0693e3;
+    color: white;
+    top: 0;
+}
+
+.white-date-card {
+    background-color: white;
+    top: 0;
+}
+
+.card {
+    width: 150px;
+    box-shadow: 1px 1px 3px rgb(97, 95, 95);
+    position: relative;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-link {
+    padding: 5px .5rem 1rem;
+    font-size: .7rem;
+}
+
+.card-float {
+    margin-bottom: 10px;
+}
+
+.transparent-card {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.time {
+    margin: 5px 0;
+    color: white;
+    font-size: .6rem;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.transparent-float {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.transparent-link, .transparent-card-3, .transparent-card-4 {
+    display: none;
+}
+
+.transparent-link {
+    justify-self: flex-end;
+}
+
+.flex {
+    display: flex;
+    gap: 7px;
+}
+
+.img-card {
+    max-width: 100px;
+    padding: 10px;
+    padding-top: 2rem;
+}
+
+.img-card *{
+    font-size: .8em;
+    color: white;
+}
+
+.img-card p{
+    font-size: .5em;
+    color: white;
+}
+
+.img-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.small-card {
+    display: flex;
+    position: relative;
+    gap: 3px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(122, 121, 121);
+    margin-bottom: 10px;
+}
+
+.small-card img {
+    width: 100px;
+    height: 100%;
+}
+
+h5 a {
+    text-transform: none;
+    color: inherit;
+    text-decoration-color: var(--red-button-color);
+}
+
+.last-main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.social-links {
+    grid-row: 2;
+}
+
+.main-flex-links {
+    color: white;
+    text-transform: capitalize;
+    font-weight: normal;
+    display: block;
+    width: max-content;
+    font-size: smaller;
+    font-family: 'Courier New', Courier, monospace;
+}
+.head-link {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.flex-2 {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+
+@media (min-width: 500px) {
+    .nav {
+        display: flex;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        /* background-color: red; */
+    }
+
+    .nav-link {
+        padding: 5px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .links {
+        display: flex;
+        gap: 10px;
+        width: 550px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .search-div {
+        display: block;
+        place-self: center;
+        width: auto;
+        /* width: 100px; */
+    }
+
+    div.search {
+        display: block;
+    }
+
+    [alt="deeper life logo"] {
+        width: 200px;
+        margin-right: 7px;
+    }
+
+    .large-img {
+        position: relative;
+    }
+
+    .center-btn {
+        position: absolute;
+        top: 50%;
+        left: 300px;
+    }
+
+    .contacts {
+        display: block;
+    }
+
+    .fa-magnifying-glass {
+        margin-top: 10px;
+    }
+
+    .media {
+        display: none;
+    }
+
+    .blue-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        align-items: center;
+    }
+
+    .card-float {
+        display: flex;
+        gap: 10px;
+    }
+
+    .transparent-link, .transparent-card-3 {
+        display: block;
+    }
+
+    .img-card-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .img-card {
+        max-width: 150px;
+        padding: 10px;
+        padding-top: 4rem;
+    }
+    
+    .img-card *{
+        font-size: 1em;
+        color: white;
+    }
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .last-but-one-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-flex {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .flex-2 {
+        margin: 0;
+    }
+    
+    /* .partition {
+        display: block;
+        height: 100vh;
+    } */
+}
+
+@media (min-width: 900px) {
+    .contacts {
+        display: block;
+        margin-left: auto;
+        place-self: center;
+    }
+
+    .media {
+        display: inline;
+    }
+
+    .large-img {
+        position: fixed;
+    }
+
+    .center-btn {
+        position: absolute;
+        top: 50%;
+        left: 800px;
+    }
+
+    .fa-magnifying-glass {
+        margin-top: 0;
+    }
+
+    .partition {
+        display: block;
+        height: 100vh;
+    }
+
+    .center-m-dark-white {
+        padding: 0px;
+    }
+
+    .big-card > img {
+        width: 300px;
+    }
+
+    .big-card {
+        display: flex;
+    }
+
+    .transparent-card-4 {
+        display: block;
+    }
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .last-main-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    .social-links {
+        grid-row: 1;
+        width: 10rem;
+        padding-right: 4rem;
+    }
+
+    /* .social-links > .i {
+        width: 100px;
+    } */
+}

@@ -1,0 +1,5 @@
+let open = document.getElementById("open")
+let close = document.getElementById("close")
+let input = document.getElementById("input")
+let closeInput = document.getElementById("close-input")
+let search = document.getElementById("search")

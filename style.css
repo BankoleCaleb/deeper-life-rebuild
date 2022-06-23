@@ -22,6 +22,10 @@
     display: none;
 }
 
+.block {
+    display: inline;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -164,7 +168,7 @@ img {
     color: var(--red-button-color);
 }
 
-.no-hover:hover {
+#no-hover:hover {
     color: black;
 }
 

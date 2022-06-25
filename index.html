@@ -16,25 +16,25 @@
         <img src="img/logo.png" alt="deeper life logo">
 
         <span class="links">
-            <div>
+            <div id="link-1" class="navigator">
                 <a href="#" class="nav-link">Home</a>
             </div>
-            <div>
+            <div id="link-2" class="navigator">
                 <a href="#" class="nav-link">about us</a>
             </div>
-            <div>
+            <div id="link-3" class="navigator">
                 <a href="#" class="nav-link">sermon</a>
             </div>
-            <div>
+            <div id="link-4" class="navigator">
                 <a href="#" class="nav-link">locations</a>
             </div>
-            <div>
+            <div id="link-5" class="navigator">
                 <a href="#" class="nav-link">events</a>
             </div>
-            <div>
+            <div id="link-6" class="navigator">
                 <a href="#" class="nav-link">resources</a>
             </div>
-            <div>
+            <div id="link-7" class="navigator">
                 <a href="#" class="nav-link">contact us</a>
             </div>
         </span>
@@ -42,7 +42,7 @@
         <div class="contacts">
             <span class="search">
                 
-                <input type="text" id="search" class="none" id="input">
+                <input type="text"  class="none" id="input" autofocus>
                 <i class="fa-solid fa-xmark none " id="close-input"></i>
 
                 <i class="fa-solid fa-magnifying-glass" id="search"></i>
@@ -57,8 +57,138 @@
         </div>
 
         <div class="menu">
-            <i class="fa fa-bars" id="open"></i>
-            <i class="fa-solid fa-xmark none" id="close"></i>
+            <div class="open-close">
+
+                <i class="fa fa-bars" id="open"></i>
+                <i class="fa-solid fa-xmark none" id="close"></i>
+            </div>
+
+            <div class="small-screen none" id="small-screen">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT US
+                    <span class="operator">
+                        <i class="fa-solid fa-square-minus none" id="minus1"></i>
+                        <i class="fa-solid fa-square-plus" id="plus1"></i>
+                    </span> 
+                </a>
+                <ul class="link-list none" id="list1">
+                    <a href="#">About us</a>
+                    <a href="#">What we believe</a>
+                    <a href="#" class="relative">Ministries
+                        <span class="operator">
+                            <i class="fa-solid fa-square-minus none" id="sub-minus1"></i>
+                            <i class="fa-solid fa-square-plus" id="sub-plus1"></i>
+                        </span> 
+                    </a>
+                    <ul class="link-list none" id="sub-list1">
+                        <a href="#">Life Press</a>
+                        <a href="#">Life Tape</a>
+                        <a href="#">Children Ministry</a>
+                        <a href="#">Youth Ministry</a>
+                        <a href="#">Campus Ministry</a>
+                        <a href="#">Women's Ministry</a>
+                        <a href="#">Life Transmission</a>
+                    </ul>
+                    <a href="#" class="relative">Pastor W.F. Kumuyi
+                        <span class="operator">
+                            <i class="fa-solid fa-square-minus none" id="sub-minus2"></i>
+                            <i class="fa-solid fa-square-plus" id="sub-plus2"></i>
+                        </span> 
+                    </a>
+                    <ul class="link-list none" id="sub-list2">
+                        <a href="#">Pastor W.F. Kumuyi</a>
+                        <a href="#">Sister Esther Kumuyi</a>
+                        <a href="#">Sister Abiodun Kumuyi (Late)</a>
+                    </ul>
+                    <a href="#">Bible School</a>
+                    <a href="#">Deeper Life Conference Center</a>
+                </ul>
+                <a href="#">SERMONS 
+                    <span class="operator">
+                        <i class="fa-solid fa-square-minus none" id="minus2"></i>
+                        <i class="fa-solid fa-square-plus" id="plus2"></i>
+                    </span> 
+                </a>
+                
+                <ul class="link-list none" id="list2">
+                    <a href="#">All Sermons</a>
+                    <a href="#">sunday service sermons</a>
+                    <a href="#">Bible study Sermons</a>
+                    <a href="#">Revival Service Sermons</a>
+                    <a href="#">Workers' Training Sermons</a>
+                    <a href="#">Leadership Development Sermons</a>
+                    <a href="#">Monthly Revival Program</a>
+                    <a href="#">Retreat & Conferences</a>
+                </ul>
+                <a href="#">LOCATIONS
+                    <span class="operator">
+                        <i class="fa-solid fa-square-minus none" id="minus3"></i>
+                        <i class="fa-solid fa-square-plus" id="plus3"></i>
+                    </span> 
+                </a>
+                <ul class="link-list none" id="list3">
+                    <a href="#">Where We Meet</a>
+                    <a href="#">Find A Church Location</a>
+                </ul>
+                <a href="#">EVENTS
+                    <span class="operator">
+                        <i class="fa-solid fa-square-minus none" id="minus4"></i>
+                        <i class="fa-solid fa-square-plus" id="plus4"></i>
+                    </span> 
+                </a>
+                <ul class="link-list none" id="list4">
+                    <a href="#">Events</a>
+                    <a href="#">Past Events</a>
+                    <a href="#">Upcoming Events</a>
+                </ul>
+                <a href="#">RESOURCES
+                    <span class="operator">
+                        <i class="fa-solid fa-square-minus none" id="minus5"></i>
+                        <i class="fa-solid fa-square-plus" id="plus5"></i>
+                    </span> 
+                </a>
+                <ul class="link-list none" id="list5">
+                    <a href="#">Our Blog</a>
+                    <a href="#">Gleans</a>
+                    <a href="#">Books & Publications</a>
+                    <a href="#">Tracts</a>
+                    <a href="#" class="relative">Devotionals
+                        <span class="operator">
+                        <i class="fa-solid fa-square-minus none" id="sub-minus3"></i>
+                        <i class="fa-solid fa-square-plus" id="sub-plus3"></i>
+                    </span> 
+                    </a>
+                    <ul class="link-list none" id="sub-list3">
+                        <a href="#">Daily Manna</a>
+                        <a href="#">Higher Everyday</a>
+                    </ul>
+
+                    <a href="#" class="relative">Booklets/Periodicals
+                        <span class="operator">
+                        <i class="fa-solid fa-square-minus none" id="sub-minus4"></i>
+                        <i class="fa-solid fa-square-plus" id="sub-plus4"></i>
+                    </span> 
+                    <ul class="link-list none" id="sub-list4">
+                        <a href="#">Tender Life Magazine</a>
+                        <a href="#">Youth Life Magazine</a>
+                        <a href="#">Campus Pearl Magazine</a>
+                    </ul>
+
+                    </a>
+                    <a href="#">Church Technology Support</a>
+                </ul>
+                <a href="#">CONTACT US
+                    <span class="operator">
+                        <i class="fa-solid fa-square-minus none" id="minus6"></i>
+                        <i class="fa-solid fa-square-plus" id="plus6"></i>
+                    </span> 
+                </a>
+                <ul class="link-list none" id="list6">
+                    <a href="#">Contact Us</a>
+                    <a href="#">Prayer Request Hub</a>
+                    <a href="#">Share your Testimony</a>
+                </ul>
+            </div>
         </div>
 
     </nav>

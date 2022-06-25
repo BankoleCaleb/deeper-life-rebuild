@@ -20,10 +20,17 @@
 
 .none {
     display: none;
+    transition: 5s;
 }
 
 .block {
+    display: block;
+    transition: 5s;
+}
+
+.inline {
     display: inline;
+    transition: 5s;
 }
 
 body {
@@ -61,12 +68,62 @@ body, *::after, *::before {
 .menu {
     position: absolute;
     top: 12px;
-    right: 10px;
+    right: 2px;
     font-size: 1.2rem;
+}
+
+.open-close {
+    text-align: right;
+    letter-spacing: 10px;
+}
+
+.small-screen {
+    background-color: var(--light-blue);
+    padding: 10px;
+    width: 230px;
+    position: relative;
+    top: 24px;
+    right: 0px;
+}
+
+.small-screen > a {
+    display: block;
+    color: white;
+    font-size: .8em;
+    padding: 3px;
+    position: relative;
+    font-weight: 1000;
+}
+
+.link-list {
+    margin: 5px 0;
+    padding-left: 14px;
+}
+
+.link-list a {
+    font-size: .6em;
+    color: white;
+    padding-top: 10px;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 1;
+}
+
+.relative {
+    position: relative;
 }
 
 .links {
     display: none;
+}
+
+.operator {
+    position: absolute;
+    right: 0;
+}
+
+[class *= "fa-square-plus"], [class *= "fa-square-minus"] {
+    font-size: large;
 }
 
 a {
@@ -463,6 +520,10 @@ h5 a {
 }
 
 @media (min-width: 500px) {
+    .small-screen {
+        display: none;
+    }
+
     .nav {
         display: flex;
     }
@@ -580,6 +641,11 @@ h5 a {
 }
 
 @media (min-width: 900px) {
+    .small-screen {
+        display: none;
+    }
+
+
     .contacts {
         display: block;
         margin-left: auto;

@@ -12,6 +12,23 @@ let link4 = document.getElementById("link-4")
 let link5 = document.getElementById("link-5")
 let link6 = document.getElementById("link-6")
 let link7 = document.getElementById("link-7")
+let sublink1 = document.getElementById("sublink1")
+let sublink2 = document.getElementById("sublink2")
+let sublink3 = document.getElementById("sublink3")
+let sublink4 = document.getElementById("sublink4")
+let drop1 = document.getElementById("drop1")
+let drop2 = document.getElementById("drop2")
+let drop3 = document.getElementById("drop3")
+let drop4 = document.getElementById("drop4")
+let drop5 = document.getElementById("drop5")
+let subdrop1 = document.getElementById("subdrop1")
+let subdrop2 = document.getElementById("subdrop2")
+let subdrop3 = document.getElementById("subdrop3")
+let subdrop4 = document.getElementById("subdrop4")
+let remove1 = document.getElementById("remove1")
+let remove2 = document.getElementById("remove2")
+let remove3 = document.getElementById("remove3")
+let remove4 = document.getElementById("remove4")
 let minus1 = document.getElementById("minus1")
 let plus1 = document.getElementById("plus1")
 let minus2 = document.getElementById("minus2")
@@ -57,8 +74,124 @@ console.log(links)
 // console.log(link6)
 // console.log(link7)
 
-link1.addEventListener ("mouseover", function(){
-    console.log("hover");
+remove1.addEventListener("mouseover", () => {
+    subdrop1.classList.remove("block")
+})
+
+remove2.addEventListener("mouseover", () => {
+    subdrop2.classList.remove("block")
+})
+
+remove3.addEventListener("mouseover", () => {
+    subdrop3.classList.remove("block")
+})
+
+remove4.addEventListener("mouseover", () => {
+    subdrop4.classList.remove("block")
+})
+
+link2.addEventListener ("mouseover", function(){
+    drop1.classList.add("block")
+})
+
+link2.addEventListener ("mouseleave", function(){
+    drop1.classList.remove("block")
+    subdrop1.classList.remove("block")
+    subdrop2.classList.remove("block")
+})
+
+drop1.addEventListener("mouseleave", () => {
+    drop1.classList.remove("block")
+})
+
+link3.addEventListener ("mouseover", function(){
+    drop2.classList.add("block")
+})
+
+link3.addEventListener ("mouseleave", function(){
+    drop2.classList.remove("block")
+})
+
+drop2.addEventListener("mouseleave", () => {
+    drop2.classList.remove("block")
+})
+
+link4.addEventListener ("mouseover", function(){
+    drop3.classList.add("block")
+})
+
+link4.addEventListener ("mouseleave", function(){
+    drop3.classList.remove("block")
+})
+
+drop3.addEventListener("mouseleave", () => {
+    drop3.classList.remove("block")
+})
+
+link5.addEventListener ("mouseover", function(){
+    drop4.classList.add("block")
+})
+
+link5.addEventListener ("mouseleave", function(){
+    drop4.classList.remove("block")
+})
+
+drop4.addEventListener("mouseleave", () => {
+    drop4.classList.remove("block")
+})
+
+link6.addEventListener ("mouseover", function(){
+    drop5.classList.add("block")
+})
+
+link6.addEventListener ("mouseleave", function(){
+    drop5.classList.remove("block")
+    subdrop3.classList.remove("block")
+    subdrop4.classList.remove("block")
+})
+
+drop5.addEventListener("mouseleave", () => {
+    drop5.classList.remove("block")
+})
+
+link7.addEventListener ("mouseover", function(){
+    drop6.classList.add("block")
+})
+
+link7.addEventListener ("mouseleave", function(){
+    drop6.classList.remove("block")
+})
+
+drop6.addEventListener("mouseleave", () => {
+    drop6.classList.remove("block")
+})
+
+sublink1.addEventListener ("mouseover", function(){
+    subdrop1.classList.add("block")
+    subdrop2.classList.remove("block")
+})
+
+// sublink1.addEventListener ("mouseleave", function(){
+//     subdrop1.classList.remove("block")
+// })
+
+subdrop1.addEventListener("mouseleave", () => {
+    subdrop1.classList.remove("block")
+})
+
+sublink2.addEventListener ("mouseover", function(){
+    subdrop2.classList.add("block")
+    subdrop1.classList.remove("block")
+})
+
+sublink3.addEventListener ("mouseover", function(){
+    subdrop3.classList.add("block")
+    subdrop4.classList.remove("block")
+})
+
+sublink4.addEventListener ("mouseover", function(){
+    subdrop4.classList.add("block")
+    subdrop3.classList.remove("block")
 })
 
 open.addEventListener("click", () => {
@@ -71,7 +204,7 @@ close.addEventListener("click", () => {
     close.classList.remove("inline");
     open.classList.remove("none")
     smallScreenMenu.classList.add("none")
-    
+
 })
 
 search.addEventListener("click", () => {
